@@ -1,0 +1,48 @@
+Results for the tiny Arrayy
+insert 47.5 μs
+append 387.6 μs
+
+//Results for small array
+
+$ node runtime.js
+Results for the small Arrayy
+insert 46.1 μs
+append 159.7 μs
+
+
+//Medium Array
+$ node runtime.js
+Results for the medium Arrayy
+insert 145 μs
+append 136.3 μs
+
+
+//Large array
+
+$ node runtime.js
+Results for the large Arrayy
+insert 10.2461 ms
+append 458.9 μs
+[
+
+//ExtraLargeArray
+
+$ node runtime.js
+Results for the extra large Arrayy
+insert 802.15 ms
+append 3.1545 ms
+
+It appears that with I ran the smaller arrays, the runtime difference between unshift and push functions isn't very noticeable. However, the push method
+performed at a faster runtime. As we get to much larger arrays, the unshift method appears to perform much faster. This is due to the fact one method runs 
+on constant time vs linear.
+
+//Research: 
+
+The time complexity of push() is O(1) where as for unshift() is it O(n). Unshift has to increment all elements that are already present in the array. Push() has 
+to insert an element at the end of the array, therefore none of the array elements index needs to change.
+
+
+
+
+
+
